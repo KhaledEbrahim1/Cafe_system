@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu_CAFE</title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <header>
+    <nav>
+      <div class="row clearfix">
+        <h1 class="logo">heart cafe </h1>
+        <ul class="main-nav animated slideInDown" id="check-class">
+       	  <li><a href="index.html">HOME</a></li>
+       	  <li><a href="Menu.html">MENU</a></li>
+       	  <li><a href="About.html">ABOUT</a></li>
+       	  <li><a href="Contact.html">CONTACT US</a></li>	
+        </ul> 
+        <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+      </div>	
+    </nav>
+    <br>
+
+    <div class="main-content-header">
+      <div class="row" style="text-align: center; margin-bottom: 5%;">
+        <div class="col">
+          <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Your Orders (<span class="total-count"></span>)</button>
+          <button style="margin-right: 5px; width:25%;" class="clear-cart btn btn-danger">Clear Orders </button></div>
+    </div>
+
+    <br>
+        <h1>M E N U</h1>
+    <br>
+    <button class="tablink" onclick="openPage('COFFEES', this, '#bf55ec')">COFFEES</button>
+    <button class="tablink" onclick="openPage('CAKES', this, '#bf55ec') "id="defaultOpen">CAKES</button>
+    <button class="tablink" onclick="openPage('JUICES', this, '#bf55ec')">JUICES</button>
+
+
+    <div id="COFFEES" class="tabcontent">
+        <h3>COFFEES</h3>
+    <br>
+    <hr>
+  
+    <div class="row">
+        <div class="column" >
+        <h2>RISTRETTO</h2>
+        <img src="imgs/menu/co1.jpg" width="200">
+        <p>A small, very strongly flavoured coffee.</p>
+        <p color: #bf55ec;>RS 145</p>
+        <a  style="font-family: body; text-decoration: none;" href="#" data-name="RISTRETTO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+    </div>
+
+    <div class="column" >
+        <h2>HOT CHOCOLATE</h2>
+        <img src="imgs/menu/co2.jpg" width="200">
+        <p>A big nourishing, wholesome cup of whole milk — really chocolaty & frothy.</p>
+        <p style="font-family: body; color: #bf55ec;">RS 225</p>
+        <a style="font-family: body; text-decoration: none;" href="#" data-name="HOT CHOCOLATE" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+    </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>ESPRESSO</h2>
+    <img src="imgs/menu/co3.jpg" width="200">
+    <p>A strong black coffee — a blast of energy. Can be had with cold milk to taste.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 145</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="ESPRESSO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ LATTE</h2>
+    <img src="imgs/menu/co4.jpg" width="200">
+    <p>A shot of Espresso topped with steamed milk and foam, served in a tall mug. The more milky kind!</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ LATTE" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CAFFE MACCHIATO</h2>
+    <img src="imgs/menu/co5.jpg" width="200">
+    <p>An espresso coffee drink with a small amount of milk added.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 145</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFFE MACCHIATO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ MOCHA</h2>
+    <img src="imgs/menu/co6.jpg" width="200">
+    <p>A delicious combination of Espresso and chocolate syrup topped with steamed milk and chocolate powder.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ MOCHA" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CAPPUCCINO</h2>
+    <img src="imgs/menu/co7.jpg" width="200">
+    <p>The Viennese style, frothy coffee with milk, topped with a dash of chocolate. Perfectly relaxing.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAPPUCCINO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>DOUBLE ESPRESSO</h2>
+    <img src="imgs/menu/co8.jpg" width="200">
+    <p>Two Espressos in one.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="DOUBLE ESPRESSO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>BLACK COFFEE</h2>
+    <img src="imgs/menu/co9.jpg" width="200">
+    <p>Black aromatic coffee, a perfect accompaniment or end to a good meal.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BLACK COFFEE" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ AMERICANO</h2>
+    <img src="imgs/menu/co10.jpg" width="200">
+    <p>American drip coffee — Italian style! Served black with milk on the side.</p>
+     <p style="font-family: body; color: #bf55ec;">RS 195</p>
+     <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ AMERICANO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>SOUTH INDIAN FILTER COFFEE</h2>
+    <img src="imgs/menu/co11.jpg" width="200">
+    <p>Espresso with hot milk, aromatic and earthy.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 195</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SOUTH INDIAN FILTER COFFEE" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<img src="imgs/menu/menu1.jpg" alt="Paris" class="center">
+<br>
+<h3>COLD COFFEES</h3>
+<br>
+<p style="text-align: center;">For extra delight, add a scoop of ice cream for Rs. 55</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>ICED CAPPUCCINO</h2>
+    <img src="imgs/menu/co12.jpg" width="200">
+    <p>Everything one enjoys in a strong Cappuccino except that this one is chilled.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 215</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="ICED CAPPUCCINO" data-price="215" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ BARISTA COLD COFFEE</h2>
+    <img src="imgs/menu/co13.jpg" width="200">
+    <p>A wonderful traditional cold coffee made with our special blend of beans. Add a scoop of ice-cream for just Rs 55 extra.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 215</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ BARISTA COLD COFFEE" data-price="215" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>ICED MOCHACCINO</h2>
+    <img src="imgs/menu/co14.jpg" width="200">
+    <p>Shot of Espresso and chocolate syrup blended together with cold milk and topped with whipped cream.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 215</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="ICED MOCHACCINO" data-price="215" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>ICED AMERICANO</h2>
+    <img src="imgs/menu/co15.jpg" width="200">
+    <p>Freshly-pulled Espresso, chilled over ice, with a dash of milk.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 195</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="ICED AMERICANO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<h3>TEAS</h3>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>OUR SELECTION</h2>
+    <img src="imgs/menu/co16.jpg" width="200">
+    <p>Green Organic, Assam Leaf, Masala Chai, Earl Grey, Kashmiri Kahwa, Darjeeling, Ginger Honey</p>
+  <p style="font-family: body; color: #bf55ec;">RS 155</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="OUR SELECTION" data-price="155" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+</div>
+
+<h3>Cafe Iced Teas</h3>
+<p style="text-align: center;">Our Iced Teas are refreshing, cooling and simply outrageous. A special blend of premium hill teas to give the perfect flavour, aroma, colour and clarity.</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>Lite Lemon / Perfect Peach</h2>
+    <img src="imgs/menu/co17.jpg" width="200">
+  <p style="font-family: body; color: #bf55ec;">RS 175 each</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="Lite Lemon / Perfect Peach" data-price="175" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+</div>
+</div>
+
+
+
+<!------- CAKES---->
+
+<div id="CAKES" class="tabcontent">
+  <h3>CAKES</h3>
+   <br>
+   <p style="text-align: center;">We recommend ... add a scoop of ice-cream to compliment some of the cakes (Rs. 55)</p>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>GOOEY CHOCOLATE CAKE</h2>
+    <img src="imgs/menu/cak5.jpg" width="200">
+    <p>A sumptuous, melt-in-the-mouth cake. Really gooey!</p>
+  <p style="font-family: body; color: #bf55ec;">RS 275</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="GOOEY CHOCOLATE CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CARROT AND WALNUT CAKE</h2>
+    <img src="imgs/menu/cak1.jpg" width="200">
+    <p>A nourishing cake made with jaggery and farm fresh carrots, full of goodness!</p>
+    <p style="font-family: body; color: #bf55ec;">RS 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARROT AND WALNUT CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>SPICED CARROT CAKE WITH MAPLE CREAM CHEESE FROSTING</h2>
+    <img src="imgs/menu/cak2.jpg" width="200">
+    <p>Our twist on a classic cake, made with jaggery and farm fresh carrots. Bursting with flavour!</p>
+   <p style="font-family: body; color: #bf55ec;">RS 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="SPICED CARROT CAKE WITH MAPLE CREAM CHEESE FROSTING" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>DATE CAKE WITH TOFFEE SAUCE</h2>
+    <img src="imgs/menu/cak3.jpg" width="200">
+    <p>A flavourful cake to comfort the heart & soul, served with a warm sauce.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="DATE CAKE WITH TOFFEE SAUCE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>LEMON CAKE WITH LEMON SAUCE</h2>
+    <img src="imgs/menu/cak4.jpg" width="200">
+    <p>A zingy upbeat cake with a great fresh lemon taste.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 275</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="LEMON CAKE WITH LEMON SAUCE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>APPLE CINNAMON CAKE</h2>
+    <img src="imgs/menu/cak6.jpg" width="200">
+    <p>Our original yummy Apple cake.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="APPLE CINNAMON CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>BANANA WALNUT CAKE</h2>
+    <img src="imgs/menu/cak1.jpg" width="200">
+    <p>A deliciously wholesome fruit and nut cake.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BANANA WALNUT CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>LEMON CHEESE CAKE</h2>
+    <img src="imgs/menu/cak6.jpg" width="200">
+    <p>An amazing lo-cal lemon cheese cake. Start spreading the news...</p>
+    <p style="font-family: body; color: #bf55ec;">RS 351</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="LEMON CHEESE CAKE" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+<div class="column" >
+    <h2>YOGURT AND MUESLI PARFAIT</h2>
+    <img src="imgs/menu/cak3.jpg" width="200">
+    <p>An all time favourite! Don’t miss it, it's also lo-cal.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 351</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="YOGURT AND MUESLI PARFAIT" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+
+
+
+<br>
+
+ <h3>Desserts</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>BANOFFEE PIE</h2>
+    <img src="imgs/menu/d1.jpg" width="200">
+    <p>A delicious cream, caramel and banana dessert. Too good to resist!</p>
+  <p style="font-family: body; color: #bf55ec;">RS 351</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="BANOFFEE PIE" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CARAMELIZED BANANAS - Gluten-free!</h2>A 
+    <img src="imgs/menu/d2.jpg" width="200">
+    <p>Healthy and packed with goodness, baked bananas with brown sugar and crunchy nuts! Perfect with a cup of green tea!</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARAMELIZED BANANAS" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>THE ULTIMATE BROWNIE</h2>
+    <img src="imgs/menu/d1.jpg" width="200">
+    <p>Chocolatey and sinfully delicious.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="THE ULTIMATE BROWNIE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>AFFOGATO</h2>
+    <img src="imgs/menu/d2.jpg" width="200">
+    <p>A scoop of ice-cream topped with a strong shot of espresso. Simply delicious.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="AFFOGATO" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/d1.jpg" alt="d1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/d2.jpg" alt="d2" style="width:100%;">
+  </div>
+</div>
+</div>
+
+<!------FRESH JUICES----->
+<div id="JUICES" class="tabcontent">
+  <h3>Fresh Juices (seasonal)</h3>
+   <br>
+   <p style="text-align: center;">Café Barista users the freshest of fruits and vegetables to give you real taste and energy!</p>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>SWEET LIME</h2>
+    <img src="imgs/menu/j2.jpg" width="200">
+    <p>A refreshing and cool fruit, it builds vitality and resistance against disease, rich in Vitamin C.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 210</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="SWEET LIME" data-price="210" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>PINEAPPLE</h2>
+    <img src="imgs/menu/j3.jpg" width="200">
+    A 
+    <p>Is a good kidney and body cleanser. Contains Vitamins A, B2, C.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 210</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="PINEAPPLE" data-price="210" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>WATERMELON</h2>
+    <img src="imgs/menu/j4.jpg" width="200">
+    <p>A high-lycopene fruit rich in Vitamin B6 and keeps the body hydrated and energetic.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="WATERMELON" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>COCONUT WATER</h2>
+    <img src="imgs/menu/j5.jpg" width="200">
+    <p>Fresh, cooling and energizing. Full of Vitamins. A, B & C.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 145</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="COCONUT WATER" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CARROT</h2>
+    <img src="imgs/menu/j6.jpg" width="200">
+    <p>Rich in Vitamin A, this is great for the eyes and cleanses the body.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 245</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CARROT" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>POMEGRANATE</h2>
+    <img src="imgs/menu/j7.jpg" width="200">
+    <p>Pomegranate is good for digestion and increasing blood circulation.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 315</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="POMEGRANATE" data-price="315" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>MANGO JUICE</h2>
+    <img src="imgs/menu/j8.jpg" width="200">
+    <p>Rich in antioxidant vitamins A, C & E and boosts the immune system.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="MANGO JUICE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+
+ <h3> Fresh Fruit Specials</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>DAILY DETOX</h2>
+    <img src="imgs/menu/j9.jpg" width="200">
+    <p>Carrot, celery, beetroot, apple & ginger. A refreshing and energising blend of all the good stuff, packed with vitamins.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 295</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="DAILY DETOX" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>SUNSHINE GLOW</h2>
+    <img src="imgs/menu/j10.jpg" width="200">
+    A 
+    <p>Pineapple & Pomegranate - A sure cure for a drained-out-feeling, it revitalises the body. Rich in beta carotene, Vitamin C & enzymes.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SUNSHINE GLOW" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>GREEN BOUNTY</h2>
+    <img src="imgs/menu/j11.jpg" width="200">
+    <p>Apple, pear spinach and mint. A glass full of goodness.</p>
+   <p style="font-family: body; color: #bf55ec;">RS 295</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="GREEN BOUNTY" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>VEGI LUCY</h2>
+    <img src="imgs/menu/j12.jpg" width="200">
+    <p>Carrot, Tomato, Beetroot, Ginger & Mint - A great de-toxifier and anti-wrinkle agent, good for the immune system. Rich in Vitamin A, potassium and magnesium.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="VEGI LUCY" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>FOUNTAIN OF YOUTH</h2>
+    <img src="imgs/menu/j13.jpg" width="200">
+    <p>Pineapple & Coconut - A natural detox. It contains Vitamins A & C, potassium, magnesium, calcium phosphorus and B-Complex.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 295</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="FOUNTAIN OF YOUTH" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>SWEET BLISS</h2>
+    <img src="imgs/menu/j14.jpg" width="200">
+    <p>Apple & Sweet Lime - A great appetizer, it helps strengthen the body’s immune system and builds body resistance. Rich in Vitamins C & B, iron, potassium, calcium and phosphorus.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SWEET BLISS" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>TROPICAL DELIGHT</h2>
+    <img src="imgs/menu/j15.jpg" width="200">
+    <p>Papaya, ESPRESSO, Apple & Pomegranate - A combination of goodness that adds to the body’s defence system. A strong anti-oxidant, it is also anti-ageing. Rich in Vitamins C & B, iron, potassium, calcium and phosphorus.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="TROPICAL DELIGHT" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<img src="imgs/menu/j1.jpg" alt="j1" class="center">
+<br>
+<h3> Dreamy Creamy Milk Shakes</h3>
+  <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>Chocolate, Banana, Mango (seasonal)</h2>
+    <img src="imgs/menu/j16.jpg" width="200">
+      <p style="font-family: body; color: #bf55ec;">RS 297 each</p>
+      <a style="font-family: body; text-decoration: none;" href="#" data-name="Chocolate, Banana, Mango (seasonal)" data-price="297" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+</div>
+
+<div class="column" >
+    <h2>DREAMY CHOCOLATE COOKIE SHAKE</h2>
+    <img src="imgs/menu/j17.jpg" width="200">
+    <p>A creamy and thick milk shake with delicious chocolate cookies all blended in. Add a scoop of vanilla ice-cream for just Rs 55.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="DREAMY CHOCOLATE COOKIE SHAKE" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<h3> Lassi</h3>
+  <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>Classic, Banana, Mango (seasonal)</h2>
+    <img src="imgs/menu/j16.jpg" width="200">
+      <p style="font-family: body; color: #bf55ec;">RS 195 each</p>
+      <a style="font-family: body; text-decoration: none;" href="#" data-name="Classic, Banana, Mango" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   
+   function slideshow(){
+      var x = document.getElementById('check-class');
+      if(x.style.display === "none"){
+        x.style.display="block";
+      } else{
+        x.style.display="none";
+      }
+   }
+
+   function openPage(pageName, elmnt, color) {
+ 
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+ 
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+ 
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+//Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+ </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="css/script.js"></script>
+  <script>
+function myFunction() {
+  alert("Item added in your order");
+}
+</script>
+ </body>
+</html>
